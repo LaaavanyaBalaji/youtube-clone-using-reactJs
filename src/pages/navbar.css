@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px; 
+  background-color: #ff5050;
+  color: white;
+  height: 100%; 
+  padding: 20px 0;
+  margin: 0; 
+  position: relative;
+}
+
+.navlist {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.navitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  cursor: pointer;
+  position: relative; 
+  transition: background-color 0.3s;
+  width: 100%; }
+
+.navitem:hover {
+  background-color: #f8f7f7;
+  color: black;
+}
+
+.navicon {
+  font-size: 2rem;
+}
+
+.navtext {
+  display: none; 
+  position: absolute;
+  left: 100%; 
+  white-space: nowrap;
+  background-color: #444;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 10px; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.navitem:hover .navtext {
+  display: block;
+  opacity: 1; 
+}
